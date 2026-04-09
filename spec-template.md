@@ -11,7 +11,7 @@
 |   | Value | Trust | Feasibility |
 |---|-------|-------|-------------|
 | **Câu hỏi** | User nào? Pain gì? AI giải gì? | Khi AI sai thì sao? User sửa bằng cách nào? | Cost/latency bao nhiêu? Risk chính? |
-| **Trả lời** | *Bác sĩ chẩn đoán hình ảnh mất ~10-15 phút/ca phức tạp để đọc và viết báo cáo thủ công. Trợ lý VLM tự sinh text gợi ý, rút ngắn xuống còn 2-3 phút, hỗ trợ hỏi đáp chéo.* | *AI sai có thể dẫn tới phác đồ điều trị sai (nguy hiểm tính mạng). Bác sĩ phải nhìn thấy ngay bằng cách đối chiếu highlight của AI vs chuyên môn, sửa bằng nút "Edit Report" trên Web.* | *Chi phí inference khá đắt (~$0.05/ảnh) do chạy GPU. Latency 5-10s. Risk chính: Hallucination (AI tự "bịa" ra khối u không có thật).* |
+| **Trả lời** | *Bác sĩ chẩn đoán hình ảnh mất ~10-15 phút/ca phức tạp để đọc và viết báo cáo thủ công. Trợ lý VLM tự sinh text gợi ý, rút ngắn xuống còn 2-3 phút, hỗ trợ hỏi đáp chéo.* | *AI sai có thể dẫn tới phác đồ điều trị sai (nguy hiểm tính mạng). Bác sĩ phải nhìn thấy ngay bằng cách đối chiếu highlight của AI vs chuyên môn, sửa bằng nút "Edit Report" trên Web.* | *Chi phí inference khá đắt (~$0.01/ảnh) do chạy GPU. Latency 5-10s. Risk chính: Hallucination (AI tự "bịa" ra khối u không có thật).* |
 
 **Automation hay augmentation?** ☐ Automation · ☑ Augmentation
 Justify: *Lĩnh vực Y tế bắt buộc dùng Augmentation. Bác sĩ MANG TRÁCH NHIỆM PHÁP LÝ cuối cùng, AI chỉ đóng vai trò phân tích sơ bộ bộ lọc số 1.*
@@ -60,7 +60,7 @@ Nếu sai ngược lại thì chuyện gì xảy ra? *Nếu tối ưu Precision 
 
 | # | Trigger | Hậu quả | Mitigation |
 |---|---------|---------|------------|
-| 1 | *Ngộ nhận (Hallucination)* | *AI bịa ra một khối u không tồn tại (False Positive tự tin cao).* | *Giải pháp UX: Giao diện luôn kèm dòng disclaimer "Đây là dự thảo, Vui lòng kiểm tra lại", ép bác sĩ phải tick ☑ "Tôi đã xem".* |
+| 1 | *Ngộ nhận (Hallucination)* | *AI bịa ra một khối u không tồn tại (False Positive tự tin cao).* | *Giải pháp UX: Giao diện luôn kèm dòng disclaimer "Đây là dự thảo, Vui lòng kiểm tra lại", bác sĩ phải ký để ngầm xác nhận rằng ☑ "Tôi đã xem".* |
 | 2 | *Phim chụp chất lượng kém / bị nhiễu độ sáng / nhòe* | *AI đọc nhòe → Đưa ra chẩn đoán "Bình thường" che mắt phần tổn thương dưới bóng mờ.* | *Tiền xử lý (Pre-processing filter) bằng thuật toán thị giác CV để cảnh báo "Chất lượng phim quá tối/sáng, đề nghị từ chối phân tích AI".* |
 | 3 | *Hỏi đáp (Visual QA) ngoài chuyên môn Y tế* | *Bác sĩ test chatbot up ảnh chế hoặc hỏi ngoài lề gây lỗi hệ thống.* | *Model Fine-Tuned phải có system prompt Guardrail chặn mọi chủ đề off-topic, chỉ trả lời phạm vi giải phẫu hình ảnh y khoa.* | 
 
@@ -71,7 +71,7 @@ Nếu sai ngược lại thì chuyện gì xảy ra? *Nếu tối ưu Precision 
 |   | Conservative (Thận trọng)| Realistic (Thực tế) | Optimistic (Lạc quan) |
 |---|-------------|-----------|------------|
 | **Assumption** | *10 bác sĩ khoa hình ảnh dùng thử, 50% hài lòng* | *20 bác sĩ dùng, 75% hài lòng* | *Triển khai toàn chuỗi viện (100+ bác sĩ), 90% hài lòng* |
-| **Cost** | *$50/tháng (Cloud GPU + Database)* | *$100/tháng (Nâng resource server)* | *$500/tháng (Dedicated instances)* |
+| **Cost** | *$50/tháng (Cloud GPU + Database)* | *$100/tháng (Nâng resource server)* | *$200/tháng (Dedicated instances)* |
 | **Benefit** | *Mỗi người giảm 1h/ngày, quen flow mới.* | *Giảm 25% nguồn lực, Bác sĩ tập trung vào case khó.* | *Tốc độ trả KQ cho bệnh nhân x2, doanh thu viện tăng 15%, zero sai sót.* |
 | **Net** | *Chưa lãi tài chính rõ ràng, nhưng thu được learning signal* | *Hòa vốn đầu tư AI, lãi về công suất* | *Cực kỳ lợi nhuận về lâu dài* |
 
