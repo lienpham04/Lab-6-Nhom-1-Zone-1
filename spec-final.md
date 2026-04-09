@@ -3,7 +3,6 @@
 **Nhóm:** Nhóm AI Research - Y Tế
 **Track:** ☐ VinFast · ☑ Vinmec *(AI Research)* · ☐ VinUni-VinSchool · ☐ XanhSM · ☐ Open
 **Problem statement (1 câu):** *Bác sĩ chẩn đoán hình ảnh đang quá tải vì khối lượng phim chụp lớn (X-ray, CT) gây mệt mỏi dễ dẫn đến sai sót; Medical VLM giúp giải quyết bằng cách tự động phân tích ảnh y tế, sinh dự thảo báo cáo chẩn đoán (Report Generation) và trả lời hỏi đáp trực quan (Visual QA).*
-
 ---
 
 ## 1. AI Product Canvas
