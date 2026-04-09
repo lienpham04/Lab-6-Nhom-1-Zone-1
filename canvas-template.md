@@ -28,7 +28,7 @@
 |---|---------|---------|
 | 1 | User correction đi vào đâu? | *Lưu vào Database làm "Ground-Truth" (Dữ liệu dán nhãn của chuyên gia).* |
 | 2 | Product thu signal gì để biết tốt lên hay tệ đi? | *Tỷ lệ Chấp nhận ngay (Acceptance Rate) không cần sửa, và Số ký tự bị bác sĩ xóa/edit (Edit Distance).* |
-| 3 | Data thuộc loại nào? ☐ User-specific · ☑ Domain-specific · ☐ Real-time · ☑ Human-judgment · ☐ Khác: ___ | *Chất xám bác sĩ* |
+| 3 | Data thuộc loại nào?| *☐ User-specific · ☑ Domain-specific · ☐ Real-time · ☑ Human-judgment · ☐ Khác: ___ * |
 
 **Có marginal value không?** *Có marginal value THẬT SỰ CAO, vì dữ liệu y tế dán nhãn bởi chuyên gia rất đắt và hiếm, public model chưa thể tiếp cận trọn vẹn đặc thù tại từng bệnh viện.*
 ___
