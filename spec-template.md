@@ -49,7 +49,7 @@ Nếu sai ngược lại thì chuyện gì xảy ra? *Nếu tối ưu Precision 
 | Metric | Threshold | Red flag (dừng khi) |
 |--------|-----------|---------------------|
 | *Recall/Sensitivity (Độ nhạy phát hiện bệnh)* | *≥ 95%* | *Recall < 80% trong 2 tuần liên tiếp* |
-| *Acceptance Rate (Bác sĩ không cần sửa report)* | *≥ 60%* | *< 20% (AI tạo ra vô số "rác", bác sĩ thà tự làm còn hơn đọc)* |
+| *Acceptance Rate (Bác sĩ không cần sửa report)* | *≥ 60%* | *< 20% (AI tạo ra vô số "rác", bác sĩ thà tự làm còn hơn đọc)* |. 
 
 ---
 
