@@ -51,3 +51,4 @@ Sự thành công của dự án có được nhờ công sức đóng góp ché
 Cảm ơn Mentor đã dành thời gian quý báu đánh giá thành quả của nhóm. Chúc Mentor chấm bài suôn sẻ và có một ngày Demo Day rực rỡ! Vinmec Medical AI xin cảm ơn!
 # Lab06-Nhom1-Zone1
 # Lab-6-Nhom-1-Zone-1
+# Lab-6-Nhom-1-Zone-1
