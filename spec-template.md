@@ -35,7 +35,7 @@ Justify: *Lĩnh vực Y tế bắt buộc dùng Augmentation. Bác sĩ MANG TRÁ
 |------|-------------------|-------|
 | Happy — AI đúng, tự tin | User thấy gì? Flow kết thúc ra sao? | *Sinh ra báo cáo đúng, bác sĩ chỉ cần đọc và ký tên.* |
 | Low-confidence — AI không chắc | System báo "không chắc" bằng cách nào? User quyết thế nào? | *AI chỉ hiển thị cảnh báo đỏ lợt và ghi thêm dòng: "Chất lượng mờ, cần đối chiếu lâm sàng thêm về khả năng u tinh tế". Bác sĩ chú ý soi kỹ hơn khu vực đó.* |
-| Failure — AI sai | User biết AI sai bằng cách nào? Recover ra sao? | *Nếu AI nhầm, bác sĩ thấy vô lý, bấm nút [Reject] kết quả hoặc dùng chuột gạch bỏ dòng chữ kết luận đó ngay trên giao diện web.* |
+| Failure — AI sai | User biết AI sai bằng cách nào? Recover ra sao? | *Nếu AI nhầm, bác sĩ thấy vô lý, typing kết quả đúng vào phần hộp thoại chat.* |
 | Correction — user sửa | User sửa bằng cách nào? Data đó đi vào đâu? | *Bác sĩ bấm vào UI, tự gõ lại báo cáo thủ công. Văn bản mới (đã sửa) + tấm ảnh X-ray gốc sẽ được luân chuyển vào Datapool đẩy qua cho bộ phận MLOps để dành cho đợt Fine-tune model tiếp theo.* |
 
 ---
