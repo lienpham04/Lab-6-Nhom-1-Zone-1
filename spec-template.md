@@ -14,7 +14,7 @@
 | **Trả lời** | *Bác sĩ chẩn đoán hình ảnh mất ~10-15 phút/ca phức tạp để đọc và viết báo cáo thủ công. Trợ lý VLM tự sinh text gợi ý, rút ngắn xuống còn 2-3 phút, hỗ trợ hỏi đáp chéo.* | *AI sai có thể dẫn tới phác đồ điều trị sai (nguy hiểm tính mạng). Bác sĩ phải nhìn thấy ngay bằng cách đối chiếu highlight của AI vs chuyên môn, sửa bằng nút "Edit Report" trên Web.* | *Chi phí inference khá đắt (~$0.05/ảnh) do chạy GPU. Latency 5-10s. Risk chính: Hallucination (AI tự "bịa" ra khối u không có thật).* |
 
 **Automation hay augmentation?** ☐ Automation · ☑ Augmentation
-Justify: *Lĩnh vực Y tế bắt buộc dùng Augmentation (Tăng cường năng lực). Bác sĩ MANG TRÁCH NHIỆM PHÁP LÝ cuối cùng, AI chỉ đóng vai trò phân tích sơ bộ bộ lọc số 1 (Second Opinion).*
+Justify: *Lĩnh vực Y tế bắt buộc dùng Augmentation. Bác sĩ MANG TRÁCH NHIỆM PHÁP LÝ cuối cùng, AI chỉ đóng vai trò phân tích sơ bộ bộ lọc số 1 (Second Opinion).*
 
 **Learning signal:**
 
