@@ -18,7 +18,7 @@
 ☐ Automation — AI làm thay, user không can thiệp
 ☑ Augmentation — AI gợi ý, user quyết định cuối cùng
 
-**Justify:** *Lĩnh vực Y tế bắt buộc dùng Augmentation. Bác sĩ MANG TRÁCH NHIỆM PHÁP LÝ cuối cùng, AI chỉ đóng vai trò phân tích sơ bộ bộ lọc số 1 (Second Opinion).*
+**Justify:** *Lĩnh vực Y tế bắt buộc dùng Augmentation. Bác sĩ MANG TRÁCH NHIỆM PHÁP LÝ cuối cùng, AI chỉ đóng vai trò phân tích sơ bộ bộ lọc số 1.*
 
 ---
 
