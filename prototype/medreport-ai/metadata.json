@@ -1,0 +1,5 @@
+{
+  "name": "MedReport AI",
+  "description": "AI-powered medical report generator from imaging data and clinical notes.",
+  "requestFramePermissions": []
+}
