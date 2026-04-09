@@ -61,7 +61,7 @@ Nếu sai ngược lại thì chuyện gì xảy ra? *Nếu tối ưu Precision 
 | # | Trigger | Hậu quả | Mitigation |
 |---|---------|---------|------------|
 | 1 | *Ngộ nhận (Hallucination)* | *AI bịa ra một khối u không tồn tại (False Positive tự tin cao).* | *Giải pháp UX: Giao diện luôn kèm dòng disclaimer "Đây là dự thảo, Vui lòng kiểm tra lại", bác sĩ phải ký để ngầm xác nhận rằng ☑ "Tôi đã xem".* |
-| 2 | *Phim chụp chất lượng kém / bị nhiễu độ sáng / nhòe* | *AI đọc nhòe → Đưa ra chẩn đoán "Bình thường" che mắt phần tổn thương dưới bóng mờ.* | *Tiền xử lý (Pre-processing filter) bằng thuật toán thị giác CV để cảnh báo "Chất lượng phim quá tối/sáng, đề nghị từ chối phân tích AI".* |
+| 2 | *Phim chụp chất lượng kém / bị nhiễu độ sáng / nhòe* | *AI đọc nhòe → Đưa ra chẩn đoán "Bình thường" che mắt phần tổn thương dưới bóng mờ.* | *Pre-processing filter bằng thuật toán thị giác CV để cảnh báo "Chất lượng phim quá tối/sáng, đề nghị từ chối phân tích AI".* |
 | 3 | *Hỏi đáp (Visual QA) ngoài chuyên môn Y tế* | *Bác sĩ test chatbot up ảnh chế hoặc hỏi ngoài lề gây lỗi hệ thống.* | *Model Fine-Tuned phải có system prompt Guardrail chặn mọi chủ đề off-topic, chỉ trả lời phạm vi giải phẫu hình ảnh y khoa.* | 
 
 ---
