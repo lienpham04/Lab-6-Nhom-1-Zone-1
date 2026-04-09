@@ -34,11 +34,3 @@
 ___
 
 ---
-
-## Cách dùng
-
-1. Điền Value trước — chưa rõ pain thì chưa điền Trust/Feasibility
-2. Trust: trả lời 4 câu UX (đúng → sai → không chắc → user sửa)
-3. Feasibility: ước lượng cost, không cần chính xác — order of magnitude đủ
-4. Learning signal: nghĩ về vòng lặp dài hạn, không chỉ demo ngày mai
-5. Đánh [?] cho chỗ chưa biết — Canvas là hypothesis, không phải đáp án
